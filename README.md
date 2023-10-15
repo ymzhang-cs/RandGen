@@ -1,5 +1,7 @@
 # RandGen - Website Design
 
+[查看中文版 README_CN.md](README_CN.md)
+
 ## What it can do
 
 ### Public Service

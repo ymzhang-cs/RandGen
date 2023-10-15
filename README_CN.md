@@ -1,5 +1,8 @@
 # RandGen - 设计方案
 
+[Visit English Version README.md](README.md)
+
+
 ## 它可以做什么
 
 ### 对所有访问者
