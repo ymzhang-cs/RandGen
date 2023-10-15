@@ -1,6 +1,6 @@
 # RandGen - Website Design
 
-## Process
+## What it can do
 
 ### Public Service
 
@@ -13,6 +13,7 @@ Every **Entry** will be stored with these info:
 - User's nickname
 - Timestamp
 - Range
+- Number of generated numbers
 - Result
 - Special HASH code
 - Unauthorized mark
@@ -20,18 +21,27 @@ Every **Entry** will be stored with these info:
 ### Verified Users Service
 
 Verified users will get 10 UUID at a time. 
-They can use these UUIDs to generate verified random number.
+They can use these UUIDs to generate verified random number for 1 time.
+These record will be cited as **Verified**.
+
 It means that they cannot generate multiple times to get a special number.
-Every use of UUID-Generation will be supervised because these record will be cited as **Verified**.
+Every use of UUID-Generation will be supervised, and every UUID is connected to a fixed nickname.
+
+Notice: The UUID is irrelevant to the generated results.
+The UUID is just a tool for authentication.
+The random number actually generated is determined by the current timestamp.
+
+Every **Authorized Entry** will be stored with these info:
 
 - Verified username
 - Timestamp
 - Range
+- Number of generated numbers
 - Result
 - Special HASH code
 - Unauthorized mark
 
-## Structure
+## Language and Framework Used
 
 The website front-end is made using templates with Flask.
 Entries are stored using SQLite.
@@ -51,9 +61,12 @@ Showing all the records.
 
 ### Record/Public
 
-Showing public records only.
+Showing unverified records only.
 
 ### Record/Verified
 
 Showing verified records only.
 
+### Record/Verified/\<nickname\>
+
+Showing all records of `nickname`.
