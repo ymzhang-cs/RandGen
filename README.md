@@ -43,6 +43,10 @@ Every **Authorized Entry** will be stored with these info:
 - Special HASH code
 - Unauthorized mark
 
+### How to be a Verified User / How to get UUID
+
+Coming soon...
+
 ## Language and Framework Used
 
 The website front-end is made using templates with Flask.

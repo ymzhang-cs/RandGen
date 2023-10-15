@@ -1,6 +1,6 @@
 # RandGen - 设计方案
 
-[Visit English Version README.md](README.md)
+[English Version README.md](README.md)
 
 
 ## 它可以做什么
@@ -41,6 +41,10 @@
 - 结果
 - 特征哈希值
 - “已认证”标记
+
+### 如何成为认证的访问者 / 如何获得UUID
+
+即将到来……
 
 ## 网站使用的语言和框架
 
