@@ -6,9 +6,9 @@
 
 ### Public Service
 
-Every visitor is allowed to generate random numbers in a special range.
+Every visitor is allowed to generate a set of random numbers in a special range.
 All the generations will be stored in a database and visible to all visitors.
-Users can choose the nickname they want to be recorded.
+Users can choose the nickname they want to be recorded as.
 
 Every **Entry** will be stored with these info:
 
@@ -17,17 +17,17 @@ Every **Entry** will be stored with these info:
 - Range
 - Number of generated numbers
 - Result
-- Special HASH code
-- Unauthorized mark
+- Special Hash code
+- Unverified mark
 
 ### Verified Users Service
 
-Verified users will get 10 UUID at a time. 
-They can use these UUIDs to generate verified random number for 1 time.
+Verified users will get 10 UUIDs at a time. 
+They can use each UUID to generate verified random numbers for 1 time.
 These record will be cited as **Verified**.
 
 It means that they cannot generate multiple times to get a special number.
-Every use of UUID-Generation will be supervised, and every UUID is connected to a fixed nickname.
+Every use of UUID to generate will be supervised, and every UUID is linked to a fixed nickname.
 
 Notice: The UUID is irrelevant to the generated results.
 The UUID is just a tool for authentication.
@@ -41,7 +41,7 @@ Every **Authorized Entry** will be stored with these info:
 - Number of generated numbers
 - Result
 - Special HASH code
-- Unauthorized mark
+- Verified mark
 
 ### How to be a Verified User / How to get UUID
 
