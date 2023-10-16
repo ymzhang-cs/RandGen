@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>RandGen</title>
+</head>
+<body>
+
+    <form id="myForm" action="/generate" method="get">
+        <label for="nickname">称呼：</label>
+        <input type="text" id="nickname" name="n"><br><br>
+
+        <label for="leftRange">左范围：</label>
+        <input type="number" id="leftRange" name="leftRange"><br><br>
+
+        <label for="rightRange">右范围：</label>
+        <input type="number" id="rightRange" name="rightRange"><br><br>
+
+        <label for="non">生成数量：</label>
+        <input type="number" id="non" name="non"><br><br>
+
+{#        <label for="UUID">UUID：</label>#}
+{#        <input type="text" id="UUID" name="UUID"><br><br>#}
+
+        <button type="submit">生成链接</button>
+    </form>
+</body>
+</html>
